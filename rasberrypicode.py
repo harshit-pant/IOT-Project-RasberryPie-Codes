@@ -1,5 +1,10 @@
 import RPi.GPIO as GPIO
 from time import sleep
+import httplib2
+import json
+import os
+import jwt
+import 
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
@@ -10,7 +15,7 @@ GPIO.setup(4,GPIO.IN)
 
 def update_firebase():
 
-	moisture= print(GPIO.input(4))
+	moisture= GPIO.input(4)
 	if moisture is not None:
 		
 		firebase.post(moisture)			
