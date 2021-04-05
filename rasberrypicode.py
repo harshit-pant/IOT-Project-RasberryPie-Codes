@@ -5,12 +5,27 @@ import json
 import urllib.request
 import os
 import jwt
-import 
+import pyrebase
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-firebase = firebase.FirebaseApplication('https://arduinofirebaseconnectio-d58e9-default-rtdb.firebaseio.com/', None)
+
+ config = {
+
+  "apiKey": "JQTcsq6HNfJlZyx30iPJOCOw93YHI1AE8QRyBnBv",
+
+  "authDomain": "arduinofirebaseconnectio-d58e9.firebaseapp.com",
+
+  "databaseURL": "https://arduinofirebaseconnectio-d58e9-default-rtdb .firebaseio.com",
+
+  "storageBucket": "arduinofirebaseconnectio-d58e9.appspot.com",
+
+ # "serviceAccount": "path/to/serviceAccountCredentials.json"
+
+}
+firebase = pyrebase.initialize_app(config)
+
 GPIO.setup(4,GPIO.IN)
 
 
