@@ -8,19 +8,20 @@ uploaded the python file that has to be run.
 Controlling Electrical appliances has not changed from a very long time, we are using the classic electrical switches.
 
 ## Disadvantages:
-•	Any loose connection can lead to irreplaceable loss
-•	High maintenance 
-•	High Installation cost 
+
+1) Any loose connection can lead to irreplaceable loss
+2) High maintenance 
+3) High Installation cost 
 
 ## Objective
 Creating an application to control all the appliances using just a mobile app
 
 ## Features:
 
-•	Plug and play: No need of any special connection.
-•	Low maintenance
-•	Low installation Cost
-•	Alert notification when in need for maintenance
+1) Plug and play: No need of any special connection.
+2) Low maintenance
+3) Low installation Cost
+4) Alert notification when in need for maintenance
 
 ## Tools & Technologies 
 The solutions come with two components 
